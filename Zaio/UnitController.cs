@@ -156,6 +156,7 @@ namespace Zaio.Interfaces
                 else
                 {
                     Log.Debug($"is attacking but no target");
+                    await Await.Delay(250);
                     await Follow();
                 }
             }
